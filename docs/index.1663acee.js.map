@@ -1,0 +1,1 @@
+{"mappings":"AAAA,MAAMA,EAAY,2BAClBC,QAAQC,IAAIF","sources":["src/js/main.ts"],"sourcesContent":["const s: string = 'Start test. (TS support)';\r\nconsole.log(s);"],"names":["s","console","log"],"version":3,"file":"index.1663acee.js.map"}
