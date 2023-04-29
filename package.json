@@ -2,11 +2,10 @@
   "name": "learn-html",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "source": "src/index.html",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build src/*.html --public-url /dist/",
+    "build": "parcel build src/index.html --dist-dir docs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
