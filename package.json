@@ -4,17 +4,18 @@
   "description": "",
   "source": "src/index.html",
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build src/index.html --dist-dir docs",
+    "start": "npm run clean && parcel",
+    "build": "npm run clean:doc && parcel build src/index.html --public-url ./  --dist-dir docs",
+    "clean": "rimraf dist/ \".parcel-cache/\"",
+    "clean:doc": "rimraf docs/index.*",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "parcel": "^2.8.3",
-    "typescript": "^5.0.4"
-  },
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.8.3"
+    "@parcel/transformer-sass": "^2.8.3",
+    "parcel": "^2.8.3",
+    "rimraf": "^5.0.0",
+    "typescript": "^5.0.4"
   }
 }
